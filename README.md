@@ -38,7 +38,7 @@ You're on branch master, but it's not good practice to make your changes here. I
 
     # When you see <...> in this context, that typically means you should replace that
     # phrase, including the '<' and '>'.
-    $ git checkout -b <initials>/introduction  # example: git checkout -b cat/introduction
+    $ git checkout -b <initials>/intro-branch  # example: git checkout -b cat/intro-branch
 
 There should be an introductions/ folder. Make a new file in it and call it your name:
 
@@ -63,4 +63,4 @@ If you run `git status` again, the file name should have turned green. Now make 
 
 Finally, push your commit to the remote repository hosted on GitHub:
 
-    $ git push origin <initials>/introduction
+    $ git push origin <initials>/intro-branch
