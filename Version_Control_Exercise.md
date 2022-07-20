@@ -12,7 +12,7 @@ All group members should verify `git` is properly installed via the command `git
     git config --global user.name "username"
     git config --global user.email "youremail"
 
-(Replace the `username` and `youremail` parts with the GitHub username and email you plan to use when working on MRover! Note that we do not use Michigan's GitLab server)
+(Replace the `username` and `youremail` parts with the GitHub username and email you plan to use when working on MRover! Note that we do not use Michigan's GitHub server)
 
 Everyone in the group should sign into their GitHub account they plan to use with the MRover team, if they have not done already.
 
@@ -36,13 +36,13 @@ At this point, everyone should have a new directory for the **local repository**
 
 Everyone run `git status`. We'll run this frequently, and you should make a habit of it - it's a
 good way to check the state of your local repository. You should see that you are up-to-date with
-`origin/main` (the "origin" refers to the remote repository on gitlab).
+`origin/main` (the "origin" refers to the remote repository on github).
 
-Run `ls`. You should also see the default `README.md` file that GitLab created automatically with
+Run `ls`. You should also see the default `README.md` file that GitHub created automatically with
 the project. Feel free to go ahead and open the file in your IDE. (You could also just open the
 whole folder in your IDE.)
 
-`README.md` contains a bunch of project startup suggestions from GitLab. You'll also notice that
+`README.md` contains a bunch of project startup suggestions from GitHub. You'll also notice that
 the raw text of the file is in a lightweight markup language called [Markdown](https://www.markdownguide.org/basic-syntax/).
 
 Person 2 should edit their copy of the file to remove most everything and replace it with a simple list of your group members. For instance:
