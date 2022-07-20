@@ -1,6 +1,6 @@
 # Workflow Introductions
 
-Welcome to MRover Software! Use this repository to "git" the hang of using Git. Just keep following this README!
+Welcome to MRover Software! Use this repository to "git" the hang making a pull request (PR) in Git. What is a PR? Essentially, it's a request to merge code from one branch (usually a development branch) into another branch (often main).
 
 By the end of this quick tutorial, you will have:
 * cloned this repo
@@ -55,11 +55,14 @@ You can do this either from the terminal, with vim or nano, or from a standard e
 
 When you're done editing, you can run `git status` and the file name should appear in red text. Add it to git:
 
+    # Adding a file to git prepares it to be committed.
     $ git add introductions/<FirstLast>.txt
 
 If you run `git status` again, the file name should have turned green. Now make a commit with a helpful message:
 
     $ git commit -m "Create <FirstLast>.txt"
+
+Creating a commit save the current state of your added changes. If this is unfamiliar, read more about commits [here](https://github.com/git-guides/git-commit).
 
 Finally, push your commit to the remote repository hosted on GitHub:
 
@@ -73,7 +76,7 @@ Your goal is to merge your new branch, `<initials>/intro-branch`, into `master`.
 
 There are multiple ways to actually create the PR, but the most reliable is as follows:
 
- 1. From [workflow-intro's main page](https://github.com/umrover/workflow-intros), switch to the 'Pull requests' tab near the top of the page.
+ 1. From [workflow-intro's main page](https://github.com/umrover/workflow-intros), switch to the 'Pull requests' tab for this particular repo, under the name 'workflow-intros'.
  2. Click the green button that says 'New pull request.'
  3. This will give you options for a 'base' branch and a 'compare' branch. The 'base' branch should be `master` because `master` is the branch you are merging *into*. The 'compare' branch should be the new branch that you pushed to the remote repo in the steps above. This will allow you to see exactly what changes your new branch would add to `master`.
  4. Ideally, some green text should show up, saying 'Able to merge.' Now click the green button that says 'Create pull request.' In future PRs, you may not get the confirmation saying 'Able to merge' because there are conflicts between changes on your branch and master. This is okay -- you can still create the PR and fix the conflicts afterwards.
@@ -84,6 +87,4 @@ There are multiple ways to actually create the PR, but the most reliable is as f
 ## Merge Your Changes
 If you closed the tab and need to get back to it, you should be able to again go to the 'pull requests' tab for the repo and find yours among the list.
 
-Once a PR has been approved by all reviewers, press the green button that says 'Merge pull request.'
-
-This will bring up a set of boxes that you can edit. TODO: figure out exactly what message formatting we want here.
+Once a PR has been approved by all reviewers, press the green button that says 'Merge pull request.' Fill in any boxes with reasonable information, and finalize the merge!
