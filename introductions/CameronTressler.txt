@@ -1,0 +1,8 @@
+Name: Cameron Tressler
+Pronouns: he/him/his
+Year: Senior
+Major: CSE
+
+This is my third year on MRover's Software Branch. I've taken multiple ULCS courses and completed a few different software engineering internships. I'm most comfortable with C++, but also have experience in Python, Vue/JavaScript, and Java.
+
+Outside of school and rover, I'm heavily involved in the marching band -- I play alto sax and work on band-related service projects. When I have time, I also like to read historical fiction, run, and play sports (not very competitively) with friends. Feel free to talk to me about any of those things, classes/internships, general college stuff, or city planning!
