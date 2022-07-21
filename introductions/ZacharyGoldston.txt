@@ -1,0 +1,8 @@
+Name: Zachary Goldston
+Pronouns: he/him/his
+Year: Senior
+Major: CSE
+
+This is my fourth year on MRover's Software Branch. I've done multiple ULCS courses, and have a wide variety of softare engineering internship experiences, ranging from embedded work to full-stack design. I'm the most comfortable with C/C++ or Java, but I also have experience with Python, JavaScript/Angular, TypeScript, Rust, and OCaml.
+
+Outside of rover, I am an IA for EECS 280, an active member of Tau Beta Pi, a cellist, and a member of a few other CSE or Math focused groups. I enjoy playing golf, skiing, cooking, and trying new bars or restaurants. Feel free to ask me about classes, applying to/experiencing internships, hobbies, or pretty much most things!
