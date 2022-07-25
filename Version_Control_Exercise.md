@@ -1,6 +1,8 @@
 # Version Control Exercise
 Note: This tutorial is based on the EECS 280 Git Tutorial from Lab 0. All credit goes to James Juett and Zachary Goldston for designing the original lab.
 
+One of the most important tools used in Software Engineering is Version Control Software, or VCS. (You'll also see it referred to as "VC" in this tutorial) VCS's function is to host and track a project over time. With it, developers can compare file changes, propose changes, view project history, track commits, more easily manage larger scale projects with several people, and more. There exist 2 main VCS today: Git and SVN. We will use Git on MRover, though SVN is another valid option for VCS.
+
 Before beginning this exercise, we recommend going through the main README in the `workflow-intros` repository, to get some basic exposure to git. 
 
 For the purposes of these exercises, we recommend you work in groups of 2-3 to go through this tutorial. This way, you and your group will gain a basic understanding of Git Workflow and handling code changes across different remotes/computers. For the purposes of this tutorial, we will assume a group of 3, but feel free to adjust roles to the number of people in your group.
@@ -17,7 +19,7 @@ All group members should verify `git` is properly installed via the command `git
 Everyone in the group should sign into their GitHub account they plan to use with the MRover team, if they have not done already.
 
 **Person 1** should create a new repository on GitHub.  From here, Person 1 should ensure the following when creating the new project:
-* Name it `mrover-vc-exercise`
+* Name it `mrover-vc-exercise` 
 * Set it to private.
 * Select the "Add a README file" option. Make sure it is checked before creating.
 
@@ -25,20 +27,19 @@ Once **Person 1** has created the repository, the next step is to add the other 
 
 To actually work on the code, you will need to **clone** the remote repository to create a **local repository** on your own computer.
  1. Open a terminal and navigate to a folder. We recommend making one called `mrover` to store all the work you will be doing with us.
- 2. Run the following command (replace `zwgold` with the username of the person who had created the remote repository): `git clone git@github.com:zwgold/mrover-vc-exercise.git` (Note: This command will only work if you have SSH Keys set up. Please follow the steps in the first tutorial to do so!)
+ 2. Run the following command (replace `zwgold` with the username of the person who had created the remote repository): `git clone git@github.com:zwgold/mrover-vc-exercise.git` (Note: This command will only work if you have SSH Keys set up. Please follow the steps in the first tutorial to do so!) *Alternatively*, (and probably more common) you can get the link from the browser page of the repository by clicking on the green **Code** dropdown button, selecting **SSH** under the "Clone" word, and then clicking the copy button next to the generate link. (should be two squares overlapping) You can then paste this into your terminal by right clicking, rather than typing out or copying then modifying the command above.
  3. Enter your username and password if prompted.
 
 This should create a new folder called `mrover-vc-exercise`. That is your **local repository**.
 
 ## Making a basic change
-At this point, everyone should have a new directory for the **local repository** called `mrover-vc-exercise`. Navigate your terminals into that folder using `cd`. You can check that you are in the right place with the command `pwd`. 
+At this point, everyone should have a new directory for the **local repository** called `mrover-vc-exercise`. Navigate your terminals into that folder using `cd mrover-vc-exercise`. You can check that you are in the right place with the command `pwd`. 
 
 Everyone run `git status`. We will run this frequently, and you should make a habit of it - it's a
 good way to check the state of your local repository. You should see that you are up-to-date with
 `origin/main` (the "origin" refers to the remote repository on github).
 
-Run the command `ls`. You should see the default `README.md` file that GitHub created automatically with the project. Feel free to go ahead and open the file in your IDE. (You could also just open the
-whole folder in your IDE.)
+Run the command `ls`. You should see the default `README.md` file that GitHub created automatically with the project. Feel free to go ahead and open the file in your IDE. (You could also just open the whole folder in your IDE.)
 
 `README.md` contains a bunch of project startup suggestions from GitHub. You'll also notice that
 the raw text of the file is in a lightweight markup language called [Markdown](https://www.markdownguide.org/basic-syntax/).
@@ -56,10 +57,10 @@ Everyone run `git status`. **Person 2**, who had made the changes, should see th
 **Person 2** should continue to lead for this section. Others should follow along.
 
  1. Run `git add README.md`. This **stages** the changes so they can be committed.
- 2. Run `git status`. That file is now staged and ready to be committed.
+ 2. Run `git status`. This shows that file is now staged from the previous step, and it is ready to be committed.
  3. Run `git commit -m "modify readme"`. This **commits** the changes to your **local repository**. You can think of each commit in the repository as a step along the version history of your code. The `-m` adds a note about what the commit does.
- 4. Run `git status`. Your **local repository** is a step ahead of the **remote repository**.
- 5. Run `git push`. From here, you may need to configure your upstream, which if needed, a message will pop up with the corresponding command to do so. Additionally, you may need to enter your GitHub username/password.
+ 4. Run `git status`. This shows that after performing the commit command, your **local repository** is a step ahead of the **remote repository**.
+ 5. Run `git push origin main`. This will send your commit from your local repository to the remote repository on the `main` branch. *Alternatively*, you can also run `git push`, though you may be asked to configure your upstream, which if needed, a message will pop up with the corresponding command to do so. (Might also need to put a username and password for GitHub) An "upstream" refers to the point where it originated from, or where we can send local commits to remote repositories. For us, `origin` is the upstream since we have our own remote repository.
  6. Run `git status`. Everything at this point should be in sync again.
 
 Now, everyone check out the repository on GitHub's website. The changes should now be there!
@@ -122,7 +123,7 @@ Now, **Person 2** should contribute their changes. The commands are as follows:
 
 Note that the `-A` flag will stage all files that have been modified.
 
-Now, **Person 1** should make one change to their copy of `README.md`.
+Now, before pulling from remote, **Person 1** should make one change to their copy of `README.md`. They **should not** have pulled in the changes Person 2 just made.
 
     # mrover-vc-exercise Person 1 was here, now.
     Our members in our group are Zachary Goldston, Cameron Tressler, and Ashwin Gupta.
