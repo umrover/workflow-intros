@@ -1,0 +1,10 @@
+Name: Guthrie Tabios
+Pronouns: he/him/his
+Year: Junior
+Major: Computer Engineering
+
+This is my third year being on the rover embedded software team!
+I learned C++ from university classes and learned C and Python from working on projects for rover.
+
+In my free time, I play League of Legends and watch anime =)
+Reach out to me if you have any questions for me!
