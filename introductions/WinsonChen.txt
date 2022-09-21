@@ -1,0 +1,11 @@
+Name: Winson Chen
+Pronouns: he/him
+Year: Junior
+Major: Computer Engineering
+
+I learned C and C++ from my classes at the University of Michigan.
+I also learned the PERN stack during my internship at CodePath during the summer of 2022.
+
+Outside of school, I enjoy watching anime and playing Genshin Impact.
+If you are ever feeling hungry, you should try cooking pasta and mixing marinara sauce and a spoonful of peanut butter.
+Feel free to ask me for more details!

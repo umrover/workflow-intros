@@ -1,0 +1,9 @@
+Name: Joe Nanni
+Pronouns: he/him/his
+Year: Junior
+Major: CSE
+
+    This is my third year as a member of the rover teleop team. For the past two summers I have interned for Michigan Medicine working on project 
+involving large datasets from the School of Anesthesiology. My programming includes lots of C++ from class projects, Python, and several different web
+frameworks like Vue, React, and Angular. In my free time I enjoy Tennis, skateboarding (ask me about the skate club!), video games, and trying new restaurants/cooking new things. I also 
+very recently got into disc golf! Ask me anything about classes, jobs/internships, my hobbies, or pretty much anything else.
